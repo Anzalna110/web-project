@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Our Services</h1>
+    <p>Discover how we support your digital journey</p>
+  </header>
+
+  <section class="services-grid">
+
+    <!-- Service Card -->
+    <div class="card">
+      <img src="web dve.jpg" alt="web Development"/>
+      <h3>Web Development</h3>
+      <p>Custom websites built with modern technologies.</p>
+      <button class="learn-btn" data-service="Web Development">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="Ui Ux des.png" alt="UI/UX"/>
+      <h3>UI/UX Design</h3>
+      <p>Designing intuitive and beautiful user interfaces.</p>
+      <button class="learn-btn" data-service="UI/UX Design">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="wordpress-customization.jpg" alt="WordPress"/>
+      <h3>WordPress Customization</h3>
+      <p>Powerful custom WordPress themes and plugins.</p>
+      <button class="learn-btn" data-service="WordPress Customization">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="Search_Engine_Optimization_d547319792.webp" alt="SEO"/>
+      <h3>SEO Optimization</h3>
+      <p>Boost your website ranking with smart SEO.</p>
+      <button class="learn-btn" data-service="SEO Optimization">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="MAD.webp" alt="mobile app dev"/>
+      <h3>Mobile App Development</h3>
+      <p>Cross-platform mobile apps for all devices.</p>
+      <button class="learn-btn" data-service="Mobile App Development">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="DM.jpeg" alt="digital Marketing"/>
+      <h3>Digital Marketing</h3>
+      <p>Data-driven campaigns that drive traffic.</p>
+      <button class="learn-btn" data-service="Digital Marketing">Learn More</button>
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p>This is more info about the service you clicked. You can customize this text.</p>
+    </div>
+  </div>
+
+  <script src="service.js"></script>
+</body>
+</html>
