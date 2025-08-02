@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Our Services</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>What We Do Best</h1>
+    <p>Explore our professional services designed to help your business grow.</p>
+    <button onclick="scrollToContact()">Get Started</button>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="card">
+        <img src="web dve.jpg" alt="web design"/>
+        <h3>Web Design</h3>
+        <p>Modern and responsive designs that reflect your brand.</p>
+        <button onclick="openModal('Web Design')">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="Search_Engine_Optimization_d547319792.webp" alt="SEO"/>
+        <h3>SEO Optimization</h3>
+        <p>Boost your visibility and ranking on search engines.</p>
+        <button onclick="openModal('SEO Optimization')">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="DM.jpeg" alt="Digital Marketing"/>
+                <h3>Digital Marketing</h3>
+        <p>Strategies to connect with your audience effectively.</p>
+        <button onclick="openModal('Digital Marketing')">Learn More</button>
+      </div>
+    </div>
+  </section>
+  <section class="why-us">
+    <h2>Why Choose Us</h2>
+    <div class="benefits">
+      <div><img src="shield.jpeg"/><p>Certified Team</p></div>
+      <div><img src="clock.jpg"/><p>24/7 Support</p></div>
+      <div><img src="rocket.png"/><p>Fast Delivery</p></div>
+      <div><img src="users-icon.png"/><p>100+ Clients</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#"><img src="fb.png"/></a>
+      <a href="#"><img src="Logo_of_Twitter.svg.png"/></a>
+      <a href="#"><img src="linkedin.webp"/></a>
+    </div>
+    <div class="footer-nav">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <p>© 2025 Our Services. All rights reserved.</p>
+  </footer>
+  <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle">Service Title</h3>
+      <p>More details about the service go here. You can customize this modal to include extra features.</p>
+    </div>
+  </div>
+
+  <script src="service.js"></script>
+</body>
+</html>
