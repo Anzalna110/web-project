@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #0b5394;
+}
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.team-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.team-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.team-card .role {
+  color: #0b5394;
+  font-weight: bold;
+}
+.team-card .bio {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.team-card .socials {
+  margin-top: 1rem;
+}
+.team-card .socials a {
+  margin: 0 5px;
+}
+.team-card .socials img {
+  width: 20px;
+  height: 20px;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0b5394;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .team-card {
+    flex: 1 1 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team-card {
+    flex: 1 1 100%;
+  }
+}
