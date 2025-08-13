@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Certificate Showcase</h1>
+        <p>A collection of successfully completed internships</p>
+    </header>
+    <section class="gallery">
+        <div class="card">
+            <img src="johndoe.jpeg" alt="Certificate">
+            <h3>John Doe</h3>
+            <p class="role">Web Development Intern</p>
+            <p class="date">Issued: Jan 2025</p>
+            <button class="view-btn" onclick="openModal(this)">View Certificate</button>
+        </div>
+        <div class="card">
+            <img src="janesmith.jpeg" alt="Certificate">
+            <h3>Jane Smith</h3>
+            <p class="role">Graphic Design Intern</p>
+            <p class="date">Issued: Dec 2024</p>
+            <button class="view-btn" onclick="openModal(this)">View Certificate</button>
+        </div>
+        <div class="card">
+            <img src="micheal.jpeg" alt="Certificate">
+            <h3>Michael Brown</h3>
+            <p class="role">Data Analysis Intern</p>
+            <p class="date">Issued: Nov 2024</p>
+            <button class="view-btn" onclick="openModal(this)">View Certificate</button>
+        </div>
+        <div class="card">
+            <img src="shahid Ali.avif" alt="Certificate">
+            <h3>Shahid Ali</h3>
+            <p class="role">Graphic Design Intern</p>
+            <p class="date">Issued: june 2024</p>
+            <button class="view-btn" onclick="openModal(this)">View Certificate</button>
+        </div>
+        <div class="card">
+            <img src="hassan ali.avif" alt="Certificate">
+            <h3>Hassan Ali</h3>
+            <p class="role">Mobile App Development Intern</p>
+            <p class="date">Issued: Dec 2023</p>
+            <button class="view-btn" onclick="openModal(this)">View Certificate</button>
+        </div>
+        <div class="card">
+            <img src="haya ali.avif" alt="Certificate">
+            <h3>Haya Ali</h3>
+            <p class="role">UX Design Intern</p>
+            <p class="date">Issued: oct 2023</p>
+            <button class="view-btn" onclick="openModal(this)">View Certificate</button>
+        </div>
+        <div class="card">
+            <img src="diya Ali.avif" alt="Certificate">
+            <h3>Diya Ali</h3>
+            <p class="role">Cyber Security Intern</p>
+            <p class="date">Issued: oct 2023</p>
+            <button class="view-btn" onclick="openModal(this)">View Certificate</button>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script src="certificate.js"></script>
+</body>
+</html>
